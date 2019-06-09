@@ -6,6 +6,17 @@
   "configurations": [
     {
       "type": "chrome",
+      "request": "launch",
+      "name": "Launch Chrome",
+      "webRoot": "${workspaceFolder}",
+      "runtimeExecutable": "/Applications/Chromium.app/Contents/MacOS/Chromium",
+      "runtimeArgs": [
+        "--app=http://localhost:5050/dist",
+        "--remote-debugging-port=9222"
+      ]
+    },
+    {
+      "type": "chrome",
       "request": "attach",
       "name": "Attach to Chrome",
       "port": 9222,
